@@ -46,6 +46,15 @@ uvicorn api:app --reload
 
 A API estará disponível em: `http://localhost:8000`
 
+### Acessar a documentação interativa
+
+FastAPI gera documentação automática e interativa. Acesse:
+
+- **Swagger UI**: http://127.0.0.1:8000/docs
+- **ReDoc**: http://127.0.0.1:8000/redoc
+
+Em produção, substitua pelo seu domínio: `https://seu-projeto.vercel.app/docs`
+
 ### Fazer uma consulta
 ```bash
 curl http://localhost:8000/nota/23260311497712000346651050000140211138967393
