@@ -71,6 +71,9 @@ def buscar_nota(chave, versao="3", ambiente="1"):
         elif "Valor a pagar" in texto:
             cupom["total"] = numero
 
+    if cupom["subtotal"] == 0.0:
+        cupom["subtotal"] = cupom["total"] + cupom["desconto"]
+
 
     for item in soup.select("#tabResult tr"):
 
